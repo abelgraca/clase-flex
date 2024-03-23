@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+.block-text{
+    display: block;
+}
+.block-text {
+    /* display: none; */
+    /* visibility:hidden; */
+  }
+  p{
+    background-color: rgb(141, 141, 141);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* el justify content no funciona sin antes el display y el flex-wrap y funciona para posicionar el contenido en el eje horizontal*/
+/*el align-items es para posicionar verticalmente*/
+nav{
+  display: flex; 
+  justify-content: space-around;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+ }
+ 
+ nav > div{
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    p {
+      font-size: 15px;
+    }
+  }
+/*media quares siempre al final @media*/
